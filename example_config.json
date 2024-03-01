@@ -1,0 +1,9 @@
+{
+    "models": [
+        {
+            "repo_id": "ByteDance/SDXL-Lightning",
+            "filename": "sdxl_lightning_report.pdf",
+            "local_dir": "models"
+        }
+    ]
+}
