@@ -1,0 +1,40 @@
+{
+    "hf_models": [
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/ip-adapter_sd15.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/ipadapter",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/ip-adapter_sd15_light.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/ipadapter",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/ip-adapter-plus_sd15.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/ipadapter",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/ip-adapter-plus-face_sd15.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/ipadapter",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/ip-adapter-full-face_sd15",
+            "local_dir": "/workspace/ComfyUI/models/ipadapter",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "h94/IP-Adapter",
+            "filename": "models/image_encoder/model.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/clip_vision",
+            "cache_dir": "/workspace/cache"
+        }
+    ]
+}

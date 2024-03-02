@@ -2,6 +2,7 @@ import json
 from argparse import ArgumentParser
 from setup_util.banner import banner
 from setup_util.load_models_from_huggingface import load_models_from_huggingface
+from setup_util.load_models_from_civitai import load_models_from_civitai
 
 parser = ArgumentParser()
 
@@ -16,3 +17,7 @@ def main():
     
     if "hf_models" in config:
         load_models_from_huggingface(config["hf_models"])
+    
+    if "civitai_models" in config:
+        load_models_from_civitai(config["civitai_models"])
+

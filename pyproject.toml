@@ -11,7 +11,9 @@ description = "A CLI application for common setup tasks required for Stable Diff
 readme = "README.md"
 authors = [{ name = "RedDeltas"}]
 dependencies = [
-    "huggingface_hub[hf_transfer] >= 0.21.3"
+    "huggingface_hub[hf_transfer] >= 0.21.3",
+    "requests >= 2.31.0",
+    "tqdm"
 ]
 
 [project.scripts]
