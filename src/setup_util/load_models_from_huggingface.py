@@ -8,6 +8,8 @@ os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 
 
 def load_models_from_huggingface(models:List[dict]):
+    print("Downloading models from HuggingFace")
+    
     for model in models:
         try:
             hf_hub_download(**model)
