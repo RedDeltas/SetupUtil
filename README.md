@@ -11,7 +11,7 @@
 ```
 ## Installation
 ```
-pip install git+https://github.com/RedDeltas/SetupScripts.git
+pip install git+https://github.com/RedDeltas/SetupUtil.git
 ```
 
 ## Usage

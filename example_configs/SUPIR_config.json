@@ -1,0 +1,16 @@
+{
+    "hf_models": [
+        {
+            "repo_id": "RunDiffusion/Juggernaut-XL-v9",
+            "filename": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "camenduru/SUPIR",
+            "filename": "SUPIR-v0Q.ckpt",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints",
+            "cache_dir": "/workspace/cache"
+        }
+    ]
+}

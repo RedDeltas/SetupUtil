@@ -5,16 +5,14 @@ requires = ["setuptools>=65.5.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "setup_scripts"
+name = "setup_util"
 version = "0.1.0"
 description = "A CLI application for common setup tasks required for Stable Diffusion"
 readme = "README.md"
 authors = [{ name = "RedDeltas"}]
 dependencies = [
-    "click >= 8.1.7",
-    "questionary >= 2.0.1",
     "huggingface_hub[hf_transfer] >= 0.21.3"
 ]
 
 [project.scripts]
-setup_scripts = "setup_scripts.main:banner_wrapper"
+setup_util = "setup_util.main:main"

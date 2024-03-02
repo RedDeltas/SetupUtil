@@ -1,5 +1,5 @@
 {
-    "models": [
+    "hf_models": [
         {
             "repo_id": "ByteDance/SDXL-Lightning",
             "filename": "sdxl_lightning_report.pdf",
