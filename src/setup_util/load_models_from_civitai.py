@@ -1,6 +1,5 @@
 import os
 import requests
-import threading
 from tqdm import tqdm
 from typing import List
 
