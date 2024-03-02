@@ -22,7 +22,7 @@ def load_models_from_civitai(models:List[dict]):
 
         r = requests.get(model['url'], headers=headers, stream=True)
         
-        if r.status_code is 401:
+        if r.status_code == 401:
             civitai_token = input("Unauthorised, please enter token:")
             os.environ["CIVITAI_TOKEN"] = civitai_token
             headers = get_headers(civitai_token)
