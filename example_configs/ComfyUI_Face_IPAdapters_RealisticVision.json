@@ -8,7 +8,7 @@
         },
         {
             "repo_id": "h94/IP-Adapter",
-            "filename": "models/ip-adapter-full-face_sd15",
+            "filename": "models/ip-adapter-full-face_sd15.safetensors",
             "local_dir": "/workspace/ComfyUI/models/ipadapter",
             "cache_dir": "/workspace/cache"
         },
