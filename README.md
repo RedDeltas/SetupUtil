@@ -49,7 +49,10 @@ The config for downloading models from HuggingFace looks like this:
 ```
 
 #### Arguments
+These are the main arguments:
 * `"repo_id"` - The HuggingFace repo you want to download the model from
 * `"filename"` - The name of the file within the HuggingFace repo that you wish to download
 * `"local_dir"` - The local directory where you want the model to be stored
 * `"cache_dir"` - The directory to be used for caching (don't worry about this too much but make sure it is within `/workspace/` if you're using runpod)
+
+Although anything you add will be passed into the `hf_hub_download()` function if you want to add anything extra https://huggingface.co/docs/huggingface_hub/v0.21.3/en/package_reference/file_download#huggingface_hub.hf_hub_download
