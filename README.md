@@ -16,13 +16,16 @@ pip install git+https://github.com/RedDeltas/SetupUtil.git
 
 ## Usage
 ```
-setup_scripts --help
+setup_util --help
 
->> Usage: setup_scripts [OPTIONS]
+>> usage: setup_util [-h] config_file
 >>
->> Options:
->>   --activity [Load models from HuggingFace]
->>   --help                          Show this message and exit.
+>> positional arguments:
+>>   config_file  Config file for setup (see example_configs in Github -
+>>                https://github.com/RedDeltas/SetupUtil/tree/main/example_configs)
+>>
+>> options:
+>>   -h, --help   show this help message and exit
 ```
 
 ### Downloading Models From HuggingFace

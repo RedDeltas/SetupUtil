@@ -5,7 +5,7 @@ from setup_util.load_models_from_huggingface import load_models_from_huggingface
 
 parser = ArgumentParser()
 
-parser.add_argument("config_file", help="Config file for setup (see example_configs in Github)")
+parser.add_argument("config_file", help="Config file for setup (see example_configs in Github - https://github.com/RedDeltas/SetupUtil/tree/main/example_configs)")
 
 args = parser.parse_args()
 
