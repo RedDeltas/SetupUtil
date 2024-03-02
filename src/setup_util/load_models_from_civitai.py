@@ -21,6 +21,7 @@ def Handler(start, end, url, filename):
         fp.write(r.content) 
 
 def load_models_from_civitai(models:List[dict]):
+    print("Downloading models from CivitAI")
 
     for model in models:
         r = requests.get(model['url'], stream=True)
