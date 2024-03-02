@@ -26,7 +26,8 @@ setup_util config.json
 The expected config file is in JSON format, at the top level it will have various keys such as `"hf_models"` which will correspond with a set of activities that `setup_util` will complete. You can find examples in the `example_configs/` directory.
 
 The currently available keys are:
-* `"hf_models"` - for downloading models from HuggingFace
+* `"hf_models"`      - for downloading models from HuggingFace
+* `"civitai_models"` - for downloading models from CivitAI
 
 Although I plan to add more later
 
@@ -57,3 +58,25 @@ These are the main arguments:
 * `"cache_dir"` - The directory to be used for caching (don't worry about this too much but make sure it is within `/workspace/` if you're using runpod)
 
 Although anything you add will be passed into the `hf_hub_download()` function if you want to add anything extra https://huggingface.co/docs/huggingface_hub/v0.21.3/en/package_reference/file_download#huggingface_hub.hf_hub_download
+
+### Downloading Models From CivitAI
+The config for downloading models from CivitAI looks like this:
+```json
+{
+   ...,
+   "civitai_models": [
+      {
+         "name": "Detail Tweaker LoRA",
+         "url": "https://civitai.com/api/download/models/62833?type=Model&format=SafeTensor",
+         "local_dir": "/workspace/ComfyUI/models/loras"
+      },
+      ...
+   ],
+   ...
+}
+```
+#### Arguments
+These are the main arguments:
+* `"name"` - The name of this model - not used anywhere just so you can see what it is as the URL is non human-readable
+* `"url"` - The url for the model, you can get this by right clicking the "download" button on CivitAI and selecting "copy link"
+* `"local_dir"` - The local directory where you want the model to be stored
