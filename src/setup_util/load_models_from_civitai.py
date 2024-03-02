@@ -3,11 +3,31 @@ import requests
 from tqdm import tqdm
 from typing import List
 
+def get_headers(token:str) -> dict:
+    headers = {
+        "Content-Type": "application/json",
+        "Authorization": f"Bearer {token}"
+    }
+    return headers
+
 def load_models_from_civitai(models:List[dict]):
     print("Downloading models from CivitAI")
 
     for model in models:
-        r = requests.get(model['url'], stream=True)
+        if "CIVITAI_TOKEN" in os.environ:
+            civitai_token = os.getenv("CIVITAI_TOKEN")
+            headers = get_headers(civitai_token)
+        else:
+            headers = {}
+
+        r = requests.get(model['url'], headers=headers, stream=True)
+        
+        if r.status_code is 401:
+            civitai_token = input("Unauthorised, please enter token:")
+            os.environ["CIVITAI_TOKEN"] = civitai_token
+            headers = get_headers(civitai_token)
+            r = requests.get(model['url'], headers=headers, stream=True)
+
         # Get filename
         content_disposition = r.headers["content-disposition"]
         filename = content_disposition.split("filename=")[1].replace('"', '')
