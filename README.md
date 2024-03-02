@@ -47,6 +47,7 @@ The config for downloading models from HuggingFace looks like this:
    ...
 }
 ```
+If the specified repo is a private one then it will prompt to ask for a HuggingFace token - this will be saved and used for subsequent models within this run of the `setup_util` so you don't need to enter it multiple times.
 
 #### Arguments
 These are the main arguments:
