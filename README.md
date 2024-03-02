@@ -1,4 +1,4 @@
-# SetupScripts
+# SetupUtil
 ```
    ___         __        
   / _ \___ ___/ /        
@@ -9,23 +9,47 @@
  / // / -_) / __/ _ `(_-<
 /____/\__/_/\__/\_,_/___/
 ```
+This is a simple utility to make getting up and running with Stable Diffusion environments easier, it is designed with RunPod in mind but should work for any environment
+
 ## Installation
 ```
 pip install git+https://github.com/RedDeltas/SetupUtil.git
 ```
 
 ## Usage
+Simply run `setup_util` passing your config as an argument
 ```
-setup_util --help
+setup_util config.json
+```
 
->> usage: setup_util [-h] config_file
->>
->> positional arguments:
->>   config_file  Config file for setup (see example_configs in Github -
->>                https://github.com/RedDeltas/SetupUtil/tree/main/example_configs)
->>
->> options:
->>   -h, --help   show this help message and exit
-```
+## Config
+The expected config file is in JSON format, at the top level it will have various keys such as `"hf_models"` which will correspond with a set of activities that `setup_util` will complete. You can find examples in the `example_configs/` directory.
+
+The currently available keys are:
+* `"hf_models"` - for downloading models from HuggingFace
+
+Although I plan to add more later
 
 ### Downloading Models From HuggingFace
+The config for downloading models from HuggingFace looks like this:
+```json
+{
+   ...,
+   "hf_models": [
+      {
+         "repo_id": "RunDiffusion/Juggernaut-XL-v9",
+         "filename": "Juggernaut-XL_v9_RunDiffusionPhoto_v2.safetensors",
+         "local_dir": "/workspace/ComfyUI/models/checkpoints",
+         "cache_dir": "/workspace/cache"
+      },
+      ...
+   ],
+   ...
+}
+```
+
+#### Arguments
+* `"repo_id"` - The HuggingFace repo you want to download the model from
+* `"filename"` - The name of the file within the HuggingFace repo that you wish to download
+* `"local_dir"` - The local directory where you want the model to be stored
+* `"cache_dir"` - The directory to be used for caching (don't worry about this too much but make sure it is within `/workspace/` if you're using runpod)
