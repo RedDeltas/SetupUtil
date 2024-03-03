@@ -1,0 +1,53 @@
+{
+    "hf_models": [
+        {
+            "repo_id": "MonsterMMORPG/tools",
+            "filename": "1k3d68.onnx",
+            "local_dir": "/workspace/ComfyUI/models/insightface/models/antelopev2",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "MonsterMMORPG/tools",
+            "filename": "2d106det.onnx",
+            "local_dir": "/workspace/ComfyUI/models/insightface/models/antelopev2",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "MonsterMMORPG/tools",
+            "filename": "genderage.onnx",
+            "local_dir": "/workspace/ComfyUI/models/insightface/models/antelopev2",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "MonsterMMORPG/tools",
+            "filename": "glintr100.onnx",
+            "local_dir": "/workspace/ComfyUI/models/insightface/models/antelopev2",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "MonsterMMORPG/tools",
+            "filename": "scrfd_10g_bnkps.onnx",
+            "local_dir": "/workspace/ComfyUI/models/insightface/models/antelopev2",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "InstantX/InstantID",
+            "filename": "ip-adapter.bin",
+            "local_dir": "/workspace/ComfyUI/models/instantid",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "InstantX/InstantID",
+            "filename": "ControlNetModel/diffusion_pytorch_model.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/controlnet",
+            "cache_dir": "/workspace/cache"
+        }
+    ],
+    "civitai_models": [
+        {
+            "name": "TurboVisionXL - v4.3.1-bakedVAE",
+            "url": "https://civitai.com/api/download/models/273102?type=Model&format=SafeTensor&size=pruned&fp=fp16",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints"
+        }
+    ]
+}

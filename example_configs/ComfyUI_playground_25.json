@@ -1,0 +1,10 @@
+{
+    "hf_models": [
+        {
+            "repo_id": "playgroundai/playground-v2.5-1024px-aesthetic",
+            "filename": "playground-v2.5-1024px-aesthetic.fp16.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints",
+            "cache_dir": "/workspace/cache"
+        }
+    ]
+}

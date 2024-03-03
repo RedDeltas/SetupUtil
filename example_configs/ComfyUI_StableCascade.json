@@ -1,0 +1,16 @@
+{
+    "hf_models": [
+        {
+            "repo_id": "stabilityai/stable-cascade",
+            "filename": "comfyui_checkpoints/stable_cascade_stage_b.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints",
+            "cache_dir": "/workspace/cache"
+        },
+        {
+            "repo_id": "stabilityai/stable-cascade",
+            "filename": "comfyui_checkpoints/stable_cascade_stage_c.safetensors",
+            "local_dir": "/workspace/ComfyUI/models/checkpoints",
+            "cache_dir": "/workspace/cache"
+        }
+    ]
+}
