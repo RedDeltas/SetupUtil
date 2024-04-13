@@ -21,7 +21,10 @@ Simply run `setup_util` passing your config as an argument
 ```
 setup_util config.json
 ```
-
+You can also pass multiple config files, this makes it easy to make your configuration composable depending on what you're doing. For example:
+```
+setup_util SUPIR_models.json SDXLIPAdapters.json
+```
 ## Config
 The expected config file is in JSON format, at the top level it will have various keys such as `"hf_models"` which will correspond with a set of activities that `setup_util` will complete. You can find examples in the `example_configs/` directory.
 
