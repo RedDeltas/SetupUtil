@@ -2,7 +2,7 @@ import os
 import json
 from typing import List
 from huggingface_hub import hf_hub_download
-from huggingface_hub.utils._errors import RepositoryNotFoundError
+from huggingface_hub.errors import RepositoryNotFoundError
 
 os.environ["HF_HUB_ENABLE_HF_TRANSFER"] = "1"
 
